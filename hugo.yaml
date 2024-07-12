@@ -1,0 +1,459 @@
+baseURL: "https://example.org"
+languageCode: "en-bo"
+title: "Minunux Linux"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+# disqusShortname: your-disqus-shortname
+# googleAnalytics: G-MEASUREMENT_ID
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+#    - identifier: blog
+#      name: Blog
+#      title: Blog posts
+#      url: /blogs
+#      weight: 1
+    - identifier: gallery
+      name: Galeria
+      title: Blog posts
+      url: /gallery
+      weight: 1
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "Minunux Linux"
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+    disableThemeToggle: true
+    defaultTheme: dark
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  # color:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "Minunux Linux" # Brand name for the brand | default is the title variable
+    disableSearch: true
+    #  searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: true
+    menus:
+      disableAbout: true
+      disableExperience: true
+      disableEducation: true
+      disableProjects: true
+      disableAchievements: true
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "bienvenid@s a.."
+    title: "Minunux Linux."
+    subtitle: "Una distro academica para la F.I.C.C.T."
+    content: |
+          Sientete segur@ de usar Linux en tu pendrive.
+
+          - Rapido y confiable
+          - GNU/Linux optimizado
+          - No virus, no malware, ¡Not Hacked!
+    image: /images/hero.png
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Descarga"
+      url: "#descarga"
+      download: false
+      newPage: false
+    socialLinks:
+#      fontAwesomeIcons:
+#        - icon: fab fa-github
+#          url: https://github.com/nucleo-linux-uagrm
+#        - icon: fab fa-x-twitter
+#          url: https://example.com
+#      customIcons:
+#        - icon: /fav.png
+#          url: "https://example.com"
+
+  # About
+  # Sobre
+  sobre:
+    enable: true
+    title: "Sobre"
+    image: "/images/me.png"
+    content: |-
+      Este proyecto de "**Minunux Linux**" permite crear una ISO arrancable que incluye un kit de herramientas para el uso académico de los [estudiantes de la Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones (FICCT)](https://www.uagrm.edu.bo/facultades/ficct).
+
+      Minunux utilizaba el mismo metodo de construcción de MiniOS, por lo tanto queremos expresar nuestro sincero agradecimiento a Crim50n, el desarrollador principal de MiniOS, por su dedicación y esfuerzo en la creación de este proyecto
+
+    skills:
+      enable: true
+      title: "Este sistema tiene prioridad a estudiantes de 1ro a 5to semestre y cuenta con 2 ediciones:"
+
+      items:
+
+        - "**Versión FULL**: Cuenta con todas las herramientas incluidas (excepto Android Studio)"
+        - "**Versión BASE**: Cuenta con un sistema Linux base para integrar las herramientas deseadas"
+        - "**Modulos**: Los modulos cuentan con herramientas individuales para su integración de herramientas en la versión Base"
+
+
+#    content: |-
+#      Queremos expresar nuestro sincero agradecimiento a Crim50n, el desarrollador principal de MiniOS, por su dedicación y esfuerzo en la creación de este proyecto. Autor original: crim50n (GitHub).
+
+
+  # Descarga
+  descarga:
+    enable: true
+    title: "Descarga"
+    items:
+      - job: "Minunux XFCE"
+        company: "Full"
+        companyUrl: "https://drive.google.com/drive/folders/19-buYMEPTkR1PszPLz8qNunSbVpjPra6"
+        date: "27 de abril del 2024"
+        info:
+           enable: false
+        featuredLink:
+          enable: true
+          name: "Descargar"
+          url: "https://drive.google.com/drive/folders/19-buYMEPTkR1PszPLz8qNunSbVpjPra6"
+        content: |
+           Versión FULL contiene todas las herramientas academicas necesarias que estan integradas por defecto.
+             - Módulo 06-00 : RustDesk, Thunderbird
+             - Módulo 06-01 : Lazarus IDE, PSeInt,Dotnet, ASP.NET Core
+             - Módulo 06-02 : Eclipse IDE, Spyder IDE, Umbrello
+             - Módulo 06-03 : Codeblocks
+             - Módulo 06-04 : OpenJRE, NetBeans
+             - Módulo 06-05 : DBeaver, SWI-Prolog
+             - Módulos Extras : Docker(compose-plugin y lazydocker), Virt-Manager
+
+      - job: "Minunux XFCE"
+        company: "Base"
+        companyUrl: "https://github.com/nucleo-linux-uagrm/"
+        date: "1 de septiembre 2024"
+        info:
+            enable: false
+        featuredLink:
+          enable: true
+          name: "Descargar"
+          url: "https://github.com/FershoUno/modulos/releases/tag/1.0.0"
+        content: |
+          Versión base para tener un sistema base y poder instalar los modulos deseados.
+            - Ejemplo 1
+
+#        info:
+#          enable: true
+#          content: I worked as a software developer for more than one year in Amazon.
+#        content: |-
+#          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+#          - Lead backend developer for a product.
+#          - Created a frontend design for a product.
+
+      - job: "Programas como modulos"
+        company: "Modulos"
+        companyUrl: "https://github.com/nucleo-linux-uagrm/modulos"
+        date: "Jan 2020 - Aug 2020"
+        info:
+          enable: false
+        featuredLink:
+          enable: true
+          name: "Descargar"
+          url: "https://github.com/FershoUno/modulos/releases/tag/1.0.0"
+        content: |
+            Lista de modulos disponibles para instalar en Minunux.
+
+            - thunderbird
+            - umbrello
+            - swi-prolog
+            - spyder
+            - rustdesk
+            - pseint-minunux
+            - eclipse-ide-minunux
+            - netbeans
+            - lazarus-ide
+            - firefox
+            - dotnet-sdk-aspnetcore
+            - dbeaver-ce
+            - codium
+            - codeblocks
+            - android-studio
+
+
+
+#        content: |
+#          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+#          - facil de instalación.
+#          - utiliza algoritmo de compresión zstd.
+#          - tercera opción valida.
+
+#      - job: "UI/UX Designer"
+#        company: "Netflix"
+#        companyUrl: "https://example.com"
+#        date: "June 2017 - Nov 2019"
+#        featuredLink:
+#          enable: true
+#          url: "https://example.com"
+#        content: |
+#          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+
+#          - Lead backend developer for a product.
+#          - Created a frontend design for a product.
+
+#      - job: "Product Designer"
+#        company: "Google"
+#        companyUrl: "https://example.com"
+#        date: "Feb 2016 - Mar 2017"
+#        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+
+  # Education
+#  education:
+#    enable: true
+#    # title: "Custom Name"
+#    index: false
+#    items:
+#      - title: "Master of Business Administration"
+#        school:
+#          name: "University of California, Berkeley"
+#          url: "https://example.org"
+#        date: "2013 - 2015"
+#        GPA: "3.8 out of 5.0"
+#        content: |-
+#          Extracurricular Activities
+#            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+#            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+#      - title: "Bachelor of Science in Computer Science"
+#        school:
+#          name: "Massachusetts Institute of Technology"
+#          url: "https://example.org"
+#        date: "2009 - 2013"
+#        GPA: "3.9 out of 5.0"
+#        content: |-
+#          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
+#          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
+#          - Face mask detection using a single convolutional neural network.
+
+#          Extracurricular Activities
+#            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+#            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
+#        featuredLink:
+#          enable: true
+#          name: "My academic record"
+#          url: "https://example.com"
+#      - title: "High School"
+#        school:
+#          name: "Thomas Jefferson High School for Science and Technology."
+#          url: "https://example.org"
+#        GPA: "4.2 out of 5.0"
+#        featuredLink:
+#          enable: true
+#          url: "https://example.com"
+
+  # Achievements
+#  achievements:
+#    enable: true
+#   # title: "Custom Name"
+#    items:
+#      - title: Google kickstart runner
+#        content: I solved all problems with optimal solution.
+#        url: https://example.com
+#        image: /images/achievment.jpg
+#      - title: Facebook Hackathon Winner
+#        content: Developed a product using Artificial Intelligence.
+#        image: /images/achievment.jpg
+#      - title: Hugo Profile
+#        content: Developed a theme and getting 1K+ downloads per month.
+#        url: "https://github.com/gurusabarish/hugo-profile"
+#        image: /images/achievment.jpg
+#      - title: Microsoft Imagine Runner
+#        content: We are developed a product which can help others.
+#      - title: Google Summer of Code
+#        content: Contributed to a open source project.
+#        url: https://example.com
+
+  # codigofuente
+  codigofuente:
+    enable: true
+    title: "Codigo Fuente"
+    items:
+      - title: MiniOS Minunux
+        content: Codigo fuente del constructor de ISO Minunux Linux.
+        image: /images/codigofuente/gitea.png
+        featured:
+          name: visitar
+          link: https://proyectos.nucleolinux.org/minunux-linux/minios-minunux
+        badges:
+          - "gitea"
+#        links:
+#          - icon: fa fa-envelope
+#            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+#          - icon: fab fa-github
+#            url: https://github.com/github.com/nucleo-linux-uagrm/minunux-linux
+#          - icon: fab fa-twitter
+#            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+
+      - title: Modulos
+        content: Codigo fuente (scripts) que se utiliza para la construcción de los modulos.
+        image: images/projects/converter.jpg
+        featured:
+          name: visitar
+          link: https://proyectos.nucleolinux.org/minunux-linux/modulos
+        badges:
+          - "Bash Scripting"
+#        links:
+#          - icon: fab fa-github
+#            url: https://github.com/gurusabarish/converter
+
+      - title: Website
+        content: Codigo fuente del Sitio web simple usando Hugo (hugo extended v0.117) + hugo-profile (template).
+        image: /images/projects/profile2.jpg
+        featured:
+          name: visitar
+          link: https://github.com/nucleo-linux-uagrm/minunux
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+#        links:
+#          - icon: fab fa-github
+#            url: https://github.com/gurusabarish/HugoProfileV2
+
+
+  #Contact
+  contacto:
+    enable: true
+    title: "Contacto"
+    content: Escribe un correo al desarrollador principal del proyecto
+    btnName: Correo
+    btnLink: mailto:felix.apaza@nucleolinux.org
+    # formspree:
+    #  enable: true # `contact.email` value will be ignored
+    #  formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #  emailCaption: "Enter your email address"
+    #  messageCaption: "Enter your message here"
+    #  messageRows: 5
+
+  footer:
+#    recentPosts:
+#      path: "blogs"
+#      count: 3
+#      title: Publicaciones recientes
+#      enable: true
+#      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/nucleo-linux-uagrm/
+#      linkedin: https://linkedin.com
+#      twitter: https://twitter.com
+#      instagram: https://instagram.com
+      facebook: https://www.facebook.com/nucleolinuxuagrm
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Leer"
+    toc: "Tabla de contenido"
+    copyright: "MIT License"
+    pageNotFound: "Pagina no encontrado"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
