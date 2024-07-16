@@ -1,4 +1,4 @@
-baseURL: "https://example.org"
+baseURL: "https://minunux.sc-linuxhosting.cloud"
 languageCode: "en-bo"
 title: "Minunux Linux"
 theme: hugo-profile
@@ -162,9 +162,12 @@ params:
     title: "Sobre"
     image: "/images/me.png"
     content: |-
-      Este proyecto de "**Minunux Linux**" permite crear una ISO arrancable que incluye un kit de herramientas para el uso académico de los [estudiantes de la Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones (FICCT)](https://www.uagrm.edu.bo/facultades/ficct).
+      El proyecto "**Minunux**" consiste en ofrecer soluciones FOSS con una construcción de un sistema Linux que viene incluido un kit de herramientas para el uso académico de los [estudiantes de la Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones (FICCT)](https://www.uagrm.edu.bo/facultades/ficct).
 
-      Minunux utilizaba el mismo metodo de construcción de MiniOS, por lo tanto queremos expresar nuestro sincero agradecimiento a Crim50n, el desarrollador principal de MiniOS, por su dedicación y esfuerzo en la creación de este proyecto
+      Minunux utiliza el mismo metodo de construcción de MiniOS, por lo tanto queremos expresar nuestro sincero agradecimiento a **[@Crim50n](https://github.com/crim50n)** <img src="/russia.svg" alt="Bandera rusa" width="15" height="10">
+      que es el desarrollador principal de MiniOS.
+
+      Minunux esta siendo desarrollado y mantenido por estudiantes de la F.I.C.C.T. (miembros de la comunidad Nucleo Linux UAGRM)
 
     skills:
       enable: true
@@ -172,8 +175,8 @@ params:
 
       items:
 
-        - "**Versión FULL**: Cuenta con todas las herramientas incluidas (excepto Android Studio)"
-        - "**Versión BASE**: Cuenta con un sistema Linux base para integrar las herramientas deseadas"
+        - "**Minunux FULL**: Cuenta con todas las herramientas incluidas (excepto Android Studio)"
+        - "**Minunux BASE**: Cuenta con un sistema Linux base para integrar las herramientas deseadas"
         - "**Modulos**: Los modulos cuentan con herramientas individuales para su integración de herramientas en la versión Base"
 
 
@@ -194,7 +197,7 @@ params:
            enable: false
         featuredLink:
           enable: true
-          name: "Descargar"
+          name: "Descargar (2.7GB)"
           url: "https://drive.google.com/drive/folders/19-buYMEPTkR1PszPLz8qNunSbVpjPra6"
         content: |
            Versión FULL contiene todas las herramientas academicas necesarias que estan integradas por defecto.
@@ -208,17 +211,20 @@ params:
 
       - job: "Minunux XFCE"
         company: "Base"
-        companyUrl: "https://github.com/nucleo-linux-uagrm/"
+        companyUrl: "https://github.com/nucleo-linux-uagrm/minios-minunux/releases/tag/v1.0.0"
         date: "1 de septiembre 2024"
         info:
             enable: false
         featuredLink:
           enable: true
-          name: "Descargar"
-          url: "https://github.com/FershoUno/modulos/releases/tag/1.0.0"
+          name: "Descargar (800MB)"
+          url: "https://github.com/nucleo-linux-uagrm/minios-minunux/releases/tag/v1.0.0"
         content: |
           Versión base para tener un sistema base y poder instalar los modulos deseados.
-            - Ejemplo 1
+            - Sistema compacto y ligero
+            - Programas esenciales para uso basico
+            - Integración con Docker y VirtManager (Virtualización)
+            - Navegador Firefox
 
 #        info:
 #          enable: true
@@ -229,16 +235,16 @@ params:
 #          - Lead backend developer for a product.
 #          - Created a frontend design for a product.
 
-      - job: "Programas como modulos"
+      - job: "Modulos ZSTD"
         company: "Modulos"
-        companyUrl: "https://github.com/nucleo-linux-uagrm/modulos"
-        date: "Jan 2020 - Aug 2020"
+        companyUrl: "https://github.com/nucleo-linux-uagrm/modulos/releases/tag/v1.0.0"
+        date: "16 de julio 2024"
         info:
           enable: false
         featuredLink:
           enable: true
           name: "Descargar"
-          url: "https://github.com/FershoUno/modulos/releases/tag/1.0.0"
+          url: "https://github.com/nucleo-linux-uagrm/minios-minunux/releases/tag/v1.0.0"
         content: |
             Lista de modulos disponibles para instalar en Minunux.
 
@@ -364,39 +370,56 @@ params:
           link: https://proyectos.nucleolinux.org/minunux-linux/minios-minunux
         badges:
           - "gitea"
-#        links:
+        links:
 #          - icon: fa fa-envelope
 #            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-#          - icon: fab fa-github
-#            url: https://github.com/github.com/nucleo-linux-uagrm/minunux-linux
+          - icon: fab fa-github
+            url: https://github.com/nucleo-linux-uagrm/minios-minunux
 #          - icon: fab fa-twitter
 #            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
       - title: Modulos
         content: Codigo fuente (scripts) que se utiliza para la construcción de los modulos.
-        image: images/projects/converter.jpg
+        image: images/codigofuente/modulos.png
         featured:
           name: visitar
           link: https://proyectos.nucleolinux.org/minunux-linux/modulos
         badges:
           - "Bash Scripting"
-#        links:
-#          - icon: fab fa-github
-#            url: https://github.com/gurusabarish/converter
+          - "ZSTD"
+
+        links:
+          - icon: fab fa-github
+            url: https://github.com/nucleo-linux-uagrm/modulos
 
       - title: Website
         content: Codigo fuente del Sitio web simple usando Hugo (hugo extended v0.117) + hugo-profile (template).
-        image: /images/projects/profile2.jpg
+        image: /images/codigofuente/website.png
         featured:
           name: visitar
-          link: https://github.com/nucleo-linux-uagrm/minunux
+          link: https://proyectos.nucleolinux.org/minunux-linux/website
         badges:
           - "Hugo"
           - "Bootstrap"
           - "Javascript"
-#        links:
-#          - icon: fab fa-github
-#            url: https://github.com/gurusabarish/HugoProfileV2
+        links:
+          - icon: fab fa-github
+            url: https://github.com/nucleo-linux-uagrm/minunux
+
+      - title: MiniOS USB Creator
+        content: Simple instalador de MiniOS y Minunux empaquetado con extensión .deb para dispositivos USB y de almacenamiento.
+        image: /images/codigofuente/minios-usb-creator.png
+        featured:
+          name: visitar
+          link: https://github.com/FershoUno/minios-usb-creator
+        badges:
+          - "YAD"
+          - "Bash Scripting"
+          - "ES-EN-RU"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/FershoUno/minios-usb-creator
+
 
 
   #Contact
@@ -406,12 +429,16 @@ params:
     content: Escribe un correo al desarrollador principal del proyecto
     btnName: Correo
     btnLink: mailto:felix.apaza@nucleolinux.org
+
     # formspree:
     #  enable: true # `contact.email` value will be ignored
     #  formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
     #  emailCaption: "Enter your email address"
     #  messageCaption: "Enter your message here"
     #  messageRows: 5
+
+
+
 
   footer:
 #    recentPosts:
