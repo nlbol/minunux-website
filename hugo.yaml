@@ -1,4 +1,4 @@
-baseURL: "https://nucleo-linux-uagrm.github.io"
+baseURL: "https://nucleo-linux-uagrm.github.io/minunux/public"
 languageCode: "en-bo"
 title: "Minunux Linux"
 theme: hugo-profile
