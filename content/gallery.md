@@ -1,4 +1,6 @@
 ---
+baseURL: "https://nucleo-linux-uagrm.github.io"
+favicon: me.png
 title: "Imagenes de Minunux"
 date: 2022-06-25T18:35:46+05:30
 draft: false

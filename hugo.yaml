@@ -1,4 +1,4 @@
-baseURL: "https://minunux.sc-linuxhosting.cloud"
+baseURL: "https://nucleo-linux-uagrm.github.io"
 languageCode: "en-bo"
 title: "Minunux Linux"
 theme: hugo-profile
@@ -32,7 +32,7 @@ Menus:
     - identifier: gallery
       name: Galeria
       title: Blog posts
-      url: /gallery
+      url: gallery
       weight: 1
     #Dropdown menu
     # - identifier: dropdown
@@ -56,7 +56,7 @@ params:
   title: "Minunux Linux"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "fav.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -135,7 +135,7 @@ params:
           - Rapido y confiable
           - GNU/Linux optimizado
           - No virus, no malware, ¡Not Hacked!
-    image: /images/hero.png
+    image: images/hero.png
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -160,7 +160,7 @@ params:
   sobre:
     enable: true
     title: "Sobre"
-    image: "/images/me.png"
+    image: "images/me.png"
     content: |-
       El proyecto "**Minunux**" consiste en ofrecer soluciones FOSS con una construcción de un sistema Linux que viene incluido un kit de herramientas para el uso académico de los [estudiantes de la Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones (FICCT)](https://www.uagrm.edu.bo/facultades/ficct).
 
@@ -364,7 +364,7 @@ params:
     items:
       - title: MiniOS Minunux
         content: Codigo fuente del constructor de ISO Minunux Linux.
-        image: /images/codigofuente/gitea.png
+        image: images/codigofuente/gitea.png
         featured:
           name: visitar
           link: https://proyectos.nucleolinux.org/minunux-linux/minios-minunux
@@ -394,7 +394,7 @@ params:
 
       - title: Website
         content: Codigo fuente del Sitio web simple usando Hugo (hugo extended v0.117) + hugo-profile (template).
-        image: /images/codigofuente/website.png
+        image: images/codigofuente/website.png
         featured:
           name: visitar
           link: https://proyectos.nucleolinux.org/minunux-linux/website
@@ -408,7 +408,7 @@ params:
 
       - title: MiniOS USB Creator
         content: Simple instalador de MiniOS y Minunux empaquetado con extensión .deb para dispositivos USB y de almacenamiento.
-        image: /images/codigofuente/minios-usb-creator.png
+        image: images/codigofuente/minios-usb-creator.png
         featured:
           name: visitar
           link: https://github.com/FershoUno/minios-usb-creator
